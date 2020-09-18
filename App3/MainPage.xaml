@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+
+    <StackLayout BackgroundColor="#000000">
+        <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
+            <Label Text="Aplicação Teste" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+        </Frame>
+        
+        <Label Text="ID" HorizontalTextAlignment="Start" TextColor="White" FontSize="14"/>
+        <Entry  x:Name="EntryId" TextColor="White"/>
+        
+        <Label Text="PASS" HorizontalTextAlignment="Start" TextColor="White" FontSize="14"/>
+        <Entry   x:Name="Entrysenha" TextColor="White" IsPassword="true"/>
+
+        <Button Text="OKAY" Clicked="Login_Clicked" x:Name="btnLogin"/>
+        <Button Text="LIMPAR" Clicked="Limpar_Clicked" x:Name="btnLimpar"/>
+        <Button Text="CREDITOS" Clicked="Credito_Clicked" x:Name="btnCredito" />
+
+    </StackLayout>
+    
+
+</ContentPage>
